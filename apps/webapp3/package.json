@@ -1,0 +1,23 @@
+{
+  "name": "@eva/webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "PORT=3000 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "prepare": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "^3.4.3",
+    "sass": "^1.62.1",
+    "vuetify": "^3.2.1"
+  },
+  "dependencies": {
+    "vite-plugin-vuetify": "^1.0.2",
+    "@eva/ui": "*",
+    "@eva/thirth": "*"
+  }
+}
