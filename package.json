@@ -2,6 +2,9 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build:webapp": "turbo run build --filter=@eva/webapp",
+    "build:webapp2": "turbo run build --filter=@eva/webapp2",
+    "build:webapp3": "turbo run build --filter=@eva/webapp3",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
