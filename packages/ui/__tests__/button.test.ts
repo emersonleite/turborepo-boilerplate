@@ -1,8 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import Button from "../components/ButtonType2.vue";
-import { executionAsyncId } from "async_hooks";
-import { wrap } from "module";
+import Button from "../components/Button.vue";
 
 describe("UI Button", () => {
   it("renders the button", () => {
@@ -17,7 +15,6 @@ describe("UI Button", () => {
       },
     });
 
-    /* expect(wrapper.html()).toContain('disabled="true"'); */
     const button = wrapper.find("button");
     expect(button.element.disabled).toBe(true);
   });

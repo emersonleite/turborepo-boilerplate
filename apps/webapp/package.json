@@ -1,5 +1,5 @@
 {
-  "name": "@eva/webapp",
+  "name": "@duck/webapp",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,11 @@
   "devDependencies": {
     "@types/node": "^18",
     "nuxt": "^3.4.3",
-    "sass": "^1.62.1",
     "vuetify": "^3.2.1"
   },
   "dependencies": {
     "vite-plugin-vuetify": "^1.0.2",
-    "@eva/ui": "*",
-    "@eva/thirth": "*"
+    "@duck/ui": "*",
+    "@duck/composables": "*"
   }
 }

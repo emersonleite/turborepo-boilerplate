@@ -1,0 +1,9 @@
+{
+  "name": "@duck/styles",
+  "version": "1.0.0",
+  "main": "./nuxt.mjs",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

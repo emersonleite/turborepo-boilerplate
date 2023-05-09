@@ -11,11 +11,13 @@ const url = "https://vuetify3nuxt3starter.behonbaker.com/";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  css: ["@/assets/main.scss"],
+  css: ["@/assets/main.scss", "@duck/styles/src/main.scss"],
   build: {
     transpile: ["vuetify"],
   },
-
+  /* imports: {
+    autoImport: true,
+  }, */
   vite: {
     ssr: {
       noExternal: ["vuetify"],
@@ -26,22 +28,25 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/_variables.scss" as *;',
+          additionalData:
+            '@use "@/assets/_variables.scss" as *; @use "@duck/styles/src/_variables.scss" as *;',
         },
       },
     },
   },
   modules: [
     "nuxt-icon",
-    "@eva/ui",
+    "@duck/ui",
+    "@duck/composables",
+    /* "@duck/styles", */
     // this adds the vuetify vite plugin
     // also produces type errors in the current beta release
-    async (options, nuxt) => {
+    /* async (options, nuxt) => {
       // @ts-ignore
       nuxt.hooks.hook("vite:extendConfig", (config) =>
         config.plugins.push(vuetify())
       );
-    },
+    }, */
   ],
 
   runtimeConfig: {

@@ -2,14 +2,13 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:webapp": "turbo run build --filter=@eva/webapp",
-    "build:webapp2": "turbo run build --filter=@eva/webapp2",
-    "build:webapp3": "turbo run build --filter=@eva/webapp3",
+    "build:webapp": "turbo run build --filter=@duck/webapp",
+    "build:webapp2": "turbo run build --filter=@duck/webapp2",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
-    "test:ui": "turbo run test --filter=@eva/ui",
+    "test:ui": "turbo run test --filter=@duck/ui",
     "prepare": "turbo run prepare"
   },
   "devDependencies": {
@@ -17,7 +16,7 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "name": "eva-monorepo",
+  "name": "duck-monorepo",
   "packageManager": "yarn@1.22.18",
   "workspaces": [
     "apps/*",
